@@ -9,8 +9,9 @@ mongoose
   .connect(DB_HOST)
   .then(() => {
     app.listen(3000);
+    console.log('server run');
   })
   .catch(error => {
-    console.log('error message', error.message);
+    console.log('error message!!!!', error.message);
     process.exit(1);
   });
